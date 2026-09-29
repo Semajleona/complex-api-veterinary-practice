@@ -1,22 +1,27 @@
 # 🐾 Project: Complex API 1 - Veterinary Practice
 
-### Goal: Build a simple front-end app that uses data returned from one api to make a request to another api to create something that would be beneficial to a veterinary practice.
+Description
 
-### How to submit your code for review:
+Animal Shelter Finder is a simple web application that helps users find animal shelters near their location. The user enters a ZIP code and clicks the Find Shelter button to search for nearby animal shelters.
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+This project was created to practice working with JavaScript, APIs, user input, and displaying information in the DOM.
 
-Example:
-```
+Tech Stack
+
+HTML — Creates the structure of the application, including the ZIP code input, button, and shelter results section.
+
+CSS — Styles the application and creates the visual design.
+
+JavaScript — Handles user input, makes API requests, and displays shelter information on the page.
+
+Features
+
+Search using a ZIP code
+
+Find animal shelters near a location
+
+Display shelter results
+<img width="4272" height="2848" alt="erik-jan-leusink-IbPxGLgJiMI-unsplash" src="https://github.com/user-attachments/assets/6f3002b5-5609-4114-bccd-91aa5606ef6c" />
 I completed the challenge: 5
 I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+It was challenging working with APIs, I had to start over after one of my APIs had two many requests.
