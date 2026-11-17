@@ -1,23 +1,22 @@
 
-
-
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    min-height: 100vh;
     padding: 80px 20px;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     text-align: center;
 
+    /* Dog and cat background image */
     background-image:
         linear-gradient(
-            rgba(0, 0, 0, 0.55),
-            rgba(0, 0, 0, 0.55)
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
         ),
-        url("pets.jpg");
+        url("pets.png");
 
     background-size: cover;
     background-position: center;
@@ -25,73 +24,128 @@ body {
     background-attachment: fixed;
 }
 
+/* MAIN HEADING */
 span {
     display: block;
     color: white;
-    font-size: 38px;
+    font-size: 42px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+    text-shadow: 2px 2px 5px black;
 }
 
+/* ZIP CODE INPUT */
 #zipcode {
-    width: 280px;
+    width: 300px;
     max-width: 100%;
     padding: 15px;
     font-size: 18px;
-    border: none;
-    border-radius: 8px;
+    border: 2px solid white;
+    border-radius: 10px;
+    outline: none;
+    background-color: white;
     margin: 10px;
 }
 
+#zipcode:focus {
+    border-color: #f28c45;
+}
+
+/* FIND SHELTER BUTTON */
 button {
     background-color: #f28c45;
     color: white;
-    padding: 15px 30px;
+    padding: 16px 30px;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+    margin: 10px;
 }
 
 button:hover {
     background-color: #d96a25;
 }
 
+/* SHELTER RESULTS CONTAINER */
 .shelterList {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    margin: 50px auto;
-    max-width: 1100px;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 60px auto;
 }
 
+/* SHELTER RESULT CARDS */
 .shelterList > * {
     background-color: rgba(255, 255, 255, 0.95);
     color: #333;
-    padding: 20px;
-    border-radius: 12px;
-    width: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    width: 320px;
     max-width: 100%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    text-align: left;
 }
 
+/* SHELTER NAMES */
+.shelterList h2,
+.shelterList h3 {
+    color: #d96a25;
+    margin-top: 0;
+}
+
+/* SHELTER INFORMATION */
+.shelterList p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* SHELTER LINKS */
 .shelterList a {
     color: #c45b19;
+    font-weight: bold;
+    text-decoration: none;
 }
 
+.shelterList a:hover {
+    text-decoration: underline;
+}
+
+/* MOBILE DESIGN */
 @media (max-width: 600px) {
+    body {
+        padding: 50px 15px;
+        background-attachment: scroll;
+    }
+
     span {
         font-size: 28px;
     }
 
     #zipcode {
         width: 100%;
+        max-width: 350px;
+        margin: 10px 0;
     }
 
     button {
         width: 100%;
-        max-width: 280px;
+        max-width: 350px;
+        margin: 10px 0;
+    }
+
+    .shelterList {
+        margin-top: 40px;
+    }
+
+    .shelterList > * {
+        width: 100%;
     }
 }
+
+
+
+
