@@ -1,3 +1,97 @@
- body {
-     background-image: url(https://unsplash.com/photos/selective-focus-photography-of-orange-and-white-cat-on-brown-table-75715CVEJhI);
- }
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 80px 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("pets.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+span {
+    display: block;
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#zipcode {
+    width: 280px;
+    max-width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+button {
+    background-color: #f28c45;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d96a25;
+}
+
+.shelterList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px auto;
+    max-width: 1100px;
+}
+
+.shelterList > * {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    max-width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.shelterList a {
+    color: #c45b19;
+}
+
+@media (max-width: 600px) {
+    span {
+        font-size: 28px;
+    }
+
+    #zipcode {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        max-width: 280px;
+    }
+}
